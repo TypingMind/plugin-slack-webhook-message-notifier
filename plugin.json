@@ -1,0 +1,35 @@
+{
+    "uuid": "9e48f0eb-6b09-44e5-80cd-eb9955ede2eb",
+    "id": "send_message_to_slack_channel_with_webhook",
+    "emoji": "🧩",
+    "title": "Slack Webhook Message Notifier",
+    "overviewMarkdown": "# Slack Webhook Message Notifier\nA plugin that sends messages to a Slack channel using an incoming webhook.\n\n❗**Important Notes**:\n- This plugin requires a webhook URL from Slack. [Learn how to set up an incoming webhook here](https://api.slack.com/messaging/webhooks)\n- This plugin can only send messages to a single pre-configured channel via webhook.\n\n### Example Usage:\n> Send a summary of this document to my Slack channel.\n   <<Your document content >>\n\n> Send a summary of this document to my Slack channel.\n   << Attach a document file >>",
+    "openaiSpec": {
+        "name": "send_message_to_slack_channel_with_webhook",
+        "description": "This function sends a message to a Slack channel via an incoming webhook",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string",
+                    "description": "This parameter represents the message that a user wants to send to the Slack channel"
+                }
+            },
+            "required": [
+                "message"
+            ]
+        }
+    },
+    "iconURL": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg",
+    "userSettings": [
+        {
+            "name": "slackWebhookUrl",
+            "label": "Slack Webhook URL",
+            "placeholder": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX",
+            "description": "Follow the steps to get your Slack Webhook URL at https://api.slack.com/messaging/webhooks.",
+            "required": true
+        }
+    ],
+    "implementationType": "javascript",
+    "outputType": "respond_to_ai"
+}
