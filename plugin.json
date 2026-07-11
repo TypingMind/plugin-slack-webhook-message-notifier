@@ -20,7 +20,7 @@
             ]
         }
     },
-    "iconURL": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg",
+    "iconURL": "https://custom.typingmind.com/assets/plugins/slack.webp",
     "userSettings": [
         {
             "name": "slackWebhookUrl",
